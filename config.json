@@ -1,0 +1,14 @@
+{
+  
+  "default_prefix": "c?",
+    "owners": "809433898890821632",
+  "guildid": "862204747528273970" ,
+  
+"support_server": "https://discord.gg/nmu9s3Cb8w",
+ "PREFIX": "c?",
+ "mongodb": "",
+ "database": "",
+ "AME_API": "",
+ "COLOR": "00FFFF",
+ " mongooseConnectionString": "mongodb+srv://9838114676:9838114676@cee2.drbay.mongodb.net/Data"
+}

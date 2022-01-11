@@ -1,0 +1,22 @@
+let embedi = new discord.MessageEmbed()
+  .setTitle(`New Member Comes!`)
+  .addFields(
+    { name: `${user.user.username} Was Invited By ${invite.inviter}` },
+    { name: `Now Inviter has ${userInviteCount} Invites!` },
+    { name: `User Joined with Code: ${invite.code}` }
+  )
+  .setColor('ORANGE')
+
+client.on("guildMemberAdd", async member => {
+  let chx = db.get(`invitechannel_${member.guild.id}`);
+
+  if (chx === null) {
+
+    return;
+
+  }
+
+  client.channels.cache.get(chx).send(embedi);
+
+});//9838114676
+mongodb+srv://9838114676:<password>@cee2.drbay.mongodb.net/test
